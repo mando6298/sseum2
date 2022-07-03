@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_write_item_scene"
+    app:layout_insetEdge="bottom"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="최근 작성 글"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layoutDescription="@xml/activity_write_item_scene"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/bestTag"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="주제"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layoutDescription="@xml/activity_write_item_scene"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/textViewWrite"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:text="내용" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                app:layoutDescription="@xml/activity_write_item_scene"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/tag"
+                    android:layout_width="220dp"
+                    android:layout_height="32dp"
+                    android:text="작성 날짜"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewUn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="이름" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
